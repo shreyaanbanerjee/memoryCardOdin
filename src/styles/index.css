@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+@font-face {
+  font-family: Pokemon;
+  src: url("../assets/Pokemon\ GB.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: url("../assets/pokemonfr-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Press Start 2P";
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+
+button:focus-visible {
+  outline: 1px solid skyblue;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.App,
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nes-radio:checked + span::before {
+  animation: blink 0.75s step-start 0s infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

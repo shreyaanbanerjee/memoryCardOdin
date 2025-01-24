@@ -1,0 +1,56 @@
+.start-screen-modal-content {
+  padding: 16px;
+  /* Fixed width to stop typewriter effect from updating modal width */
+  width: 467px;
+}
+
+.github-repo:hover,
+.github-repo {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ask-text {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  letter-spacing: -0.02em;
+  animation: typing 1s steps(90, end);
+}
+
+.start-screen-modal-content .start-screen-menu {
+  margin-top: 24px;
+  animation: appear 1s;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.level-options {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 8px 0;
+  letter-spacing: -0.08em;
+  font-family: Pokemon;
+}
+
+@keyframes appear {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    white-space: nowrap;
+    width: 0;
+  }
+
+  to {
+    white-space: nowrap;
+    width: 100%;
+  }
+}
